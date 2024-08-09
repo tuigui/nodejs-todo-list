@@ -17,7 +17,9 @@ router.post("/todos", async (req, res, next) => {
     if (!value) {
       return res
         .status(400)
-        .json({ errorMessage: "해야할 일(value) 데이터가 존재하지 않습니다." });
+        .json({
+          errorMessage: "해야할 일(value) 데이터가 운지 존재하지 않습니다.",
+        });
     }
 
     const todoMaxOrder = await Todo.findOne().sort("-order").exec();
