@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const connect = () => {
   mongoose
     .connect(
-      "mongodb+srv://sparta-user:aaaa4321@express-mongo.zw2hp.mongodb.net/?retryWrites=true&w=majority&appName=express-mongo",
+      "mongodb+srv://sparta-user:password@express-mongo.zw2hp.mongodb.net/?retryWrites=true&w=majority&appName=express-mongo",
       {
         dbName: "todo_memo",
       }
